@@ -10,6 +10,10 @@ http://localhost:3000/api/product/Logitech/1
 
 
 
+//Debe devolver el producto solo si tiene stock. 
+//Además, puede recibir las siguientes query:
+// stock, minPrice, maxPrice
+
 router.get("/product", (req, res) => {
 	res.send("hola")
 });
